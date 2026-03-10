@@ -1,21 +1,23 @@
 package exercicio3;
 
-public class Quadrado implements Poligono{
+public class TrianguloEquilatero implements Poligono {
     private double lado;
     
-    public Quadrado(double lado) {
+
+    public TrianguloEquilatero(double lado) {
         this.lado = lado;
     }
 
     @Override
-    public double calcularArea() {
-         return lado*lado;
-        
+    public double calcularPerimetro() {
+        return 3*lado;
+       
     }
 
     @Override
-    public double calcularPerimetro() {
-      return 4*lado;
+    public double calcularArea() {
+        return lado*lado/2;
+       
     }
 
     public double getLado() {
@@ -25,7 +27,5 @@ public class Quadrado implements Poligono{
     public void setLado(double lado) {
         this.lado = lado;
     }
-
-    
     
 }

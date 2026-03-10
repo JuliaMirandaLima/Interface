@@ -2,8 +2,8 @@ package exercicio3;
 
 public interface Poligono{
 
-    public double calculaArea();
+    double calcularArea();
 
-    public double calcularPerimetro();
+    double calcularPerimetro();
 
 }
